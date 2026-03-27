@@ -1,0 +1,102 @@
+.press-page {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.press-page .page-header {
+  background: linear-gradient(135deg, #00BFA5 0%, #00897B 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.press-page .page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+}
+
+.press-page .page-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.press-page .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.press-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.press-content h2 {
+  font-size: 2rem;
+  color: #00BFA5;
+  margin-bottom: 20px;
+}
+
+.press-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.press-contact {
+  background: #E0F2F1;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.press-contact h3 {
+  font-size: 1.5rem;
+  color: #00897B;
+  margin-bottom: 15px;
+}
+
+.press-contact p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .press-page .page-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .press-page .page-header {
+    padding: 60px 20px;
+  }
+  
+  .press-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .press-content p {
+    font-size: 1rem;
+  }
+
+  .press-contact {
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .press-page .page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .press-page .container {
+    padding: 30px 15px;
+  }
+
+  .press-content h2 {
+    font-size: 1.4rem;
+  }
+}

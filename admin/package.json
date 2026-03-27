@@ -1,0 +1,22 @@
+{
+  "name": "teztecch-buzz-admin",
+  "version": "1.0.0",
+  "description": "Admin Panel for TezTecch Buzz",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5174 --host",
+    "build": "vite build",
+    "preview": "vite preview --port 5174",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "terser": "^5.46.0",
+    "vite": "^5.4.21"
+  }
+}

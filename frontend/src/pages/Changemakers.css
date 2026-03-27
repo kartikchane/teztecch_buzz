@@ -1,0 +1,158 @@
+.changemakers-page {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.changemakers-page .page-header {
+  background: linear-gradient(135deg, #00BFA5 0%, #00897B 100%);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.changemakers-page .page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.changemakers-page .page-header .title-icon {
+  width: 10px;
+  height: 35px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.changemakers-page .page-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.changemakers-page .container {
+  padding: 50px 20px;
+}
+
+.changemakers-page .changemakers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.changemakers-page .changemaker-card {
+  text-decoration: none;
+  display: block;
+  transition: transform 0.3s;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.changemakers-page .changemaker-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.changemakers-page .changemaker-image {
+  height: 220px;
+  overflow: hidden;
+}
+
+.changemakers-page .changemaker-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.changemakers-page .changemaker-card:hover .changemaker-image img {
+  transform: scale(1.05);
+}
+
+.changemakers-page .changemaker-info {
+  padding: 20px;
+}
+
+.changemakers-page .changemaker-category {
+  font-size: 11px;
+  font-weight: 700;
+  color: #00BFA5;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.changemakers-page .changemaker-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #00BFA5;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+}
+
+.changemakers-page .changemaker-card:hover .changemaker-title {
+  color: #009688;
+}
+
+.changemakers-page .changemaker-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.changemakers-page .changemaker-date {
+  font-size: 12px;
+  color: #666;
+}
+
+.changemakers-page .changemaker-read-time {
+  font-size: 11px;
+  color: #999;
+}
+
+@media (max-width: 1024px) {
+  .changemakers-page .changemakers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .changemakers-page .page-header {
+    padding: 40px 20px;
+  }
+
+  .changemakers-page .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .changemakers-page .changemakers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .changemakers-page .changemaker-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .changemakers-page .page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .changemakers-page .container {
+    padding: 30px 15px;
+  }
+
+  .changemakers-page .changemakers-grid {
+    gap: 20px;
+  }
+
+  .changemakers-page .changemaker-info {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,265 @@
+/* Footer Styles */
+.footer {
+  background: #2d2d2d;
+  color: #b0b0b0;
+  padding: 60px 0 30px;
+  margin-top: 0;
+}
+
+.footer .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  margin-bottom: 0;
+  align-items: start;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  color: #b0b0b0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.footer-section ul li a:hover {
+  color: #00BFA5;
+}
+
+/* Contact Section */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.contact-label {
+  font-size: 0.75rem;
+  color: #808080;
+  margin: 8px 0 2px 0;
+  padding: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.contact-label:first-child {
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.contact-label:not(:first-child) {
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+
+.contact-email {
+  color: #00BFA5;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  margin: 0 0 4px 0;
+  padding: 0;
+  line-height: 1.2;
+  display: block;
+  font-weight: 400;
+}
+
+.contact-link {
+  color: #00BFA5;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  display: block;
+  font-weight: 400;
+}
+
+.contact-email:hover,
+.contact-link:hover {
+  color: #00e5c3;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.social-icons a {
+  color: #ff6b6b;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+  color: #ff8787;
+}
+
+/* Weekly Digest Section */
+.digest-text {
+  color: #b5b5b5;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.subscribe-form input {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 4px;
+  background: white;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.subscribe-form input:focus {
+  outline: 2px solid #00BFA5;
+}
+
+.subscribe-form input::placeholder {
+  color: #999;
+}
+
+.subscribe-form button {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 4px;
+  background: #00BFA5;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.subscribe-form button:hover {
+  background: #00897B;
+}
+
+.subscribe-form button:disabled {
+  background: #80decc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.subscribe-message {
+  padding: 10px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  text-align: center;
+  animation: slideIn 0.3s ease;
+}
+
+.subscribe-message.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.subscribe-message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer .container {
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1rem;
+  }
+
+  .footer-section ul li a {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 0 15px;
+  }
+  
+  .social-icons a {
+    font-size: 1.2rem;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+}

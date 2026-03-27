@@ -1,0 +1,45 @@
+/* Back to Home Button - Shared Styles */
+.back-to-home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background: rgba(0, 191, 165, 0.95);
+  padding: 8px 16px;
+  border-radius: 8px;
+  position: fixed;
+  left: 20px;
+  top: 90px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.back-to-home-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.back-to-home-btn:hover {
+  background: rgba(0, 191, 165, 1);
+  transform: translateX(-3px);
+  box-shadow: 0 4px 15px rgba(0, 191, 165, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .back-to-home-btn {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    top: 70px;
+    left: 10px;
+  }
+  
+  .back-to-home-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+}

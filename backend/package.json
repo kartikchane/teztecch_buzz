@@ -1,0 +1,26 @@
+{
+  "name": "teztecch-buzz-backend",
+  "version": "1.0.0",
+  "description": "Backend API for TezTecch Buzz",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "build": "cd ../admin && npm install --include=dev && npx vite build",
+    "create-admin": "node createAdmin.js",
+    "seed-testimonials": "node seedTestimonials.js"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.0.3"
+  }
+}
