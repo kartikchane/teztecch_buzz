@@ -203,11 +203,23 @@
   margin: 0 auto;
 }
 
+
 .intro-section {
   text-align: center;
   max-width: 900px;
   margin: 0 auto 60px;
-  padding: 30px;\n  background: linear-gradient(135deg, #f5f7fa 0%, #e0f2f1 100%);\n  border-radius: 15px;\n  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);\n}\n\n.intro-section h2 {\n  color: #00BFA5;\n  font-size: 2.2rem;\n  margin-bottom: 20px;\n  font-weight: 700;\n}
+  padding: 30px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e0f2f1 100%);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.intro-section h2 {
+  color: #00BFA5;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
 
 .intro-text {
   font-size: 1.15rem;
