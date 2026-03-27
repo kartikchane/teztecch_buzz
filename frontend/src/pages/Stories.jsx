@@ -133,8 +133,8 @@ const Stories = () => {
   const fetchStories = async () => {
     setLoading(true);
     try {
-      console.log('Fetching stories from:', `${API_URL}/public/stories?limit=300`);
-      const storiesRes = await fetch(`${API_URL}/public/stories?limit=300`);
+      console.log('Fetching stories from:', `${API_URL}/stories?limit=300`);
+      const storiesRes = await fetch(`${API_URL}/stories?limit=300`);
       const storiesData = await storiesRes.json();
       console.log('Stories data received:', storiesData);
       if (storiesData.success && storiesData.data.length > 0) {
